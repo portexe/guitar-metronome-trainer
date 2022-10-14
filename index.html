@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metronome Thing</title>
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <div class="main">
+      <div id="current-note">--</div>
+
+      <div class="bpm-container">
+        <div id="bpm-minus" class="bpm-button">-</div>
+        <div id="bpm" class="bpm-display"></div>
+        <div id="bpm-plus" class="bpm-button">+</div>
+      </div>
+      
+      <div class="bpm-slider-container">
+        <input id="bpm-slider" type="range" max="200" min="20" />
+      </div>
+  
+      <button class="metronome-button" id="start">Start</button>
+      <button class="metronome-button" id="stop">Stop</button>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
